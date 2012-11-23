@@ -1,0 +1,28 @@
+
+acme_blog_default_index:
+    pattern: /hello/{name}
+    defaults:
+        _controller: AcmeBlogBundle:Default:index
+acme_blog_default_create:
+    pattern: /create/
+    defaults:
+        _controller: AcmeBlogBundle:Default:create
+acme_blog_default_show:
+    pattern: /show/{id}
+    defaults:
+        _controller: AcmeBlogBundle:Default:show
+        requirements: 
+          id: \d+          
+_security_login:
+    pattern:  /login
+    defaults: { _controller: AcmeBlogBundle:Security:login }
+
+_security_check:
+    pattern:  /login_check
+
+_security_logout:
+    pattern:  /logout
+
+admin_home:
+    pattern:  /admin/
+    defaults: { _controller: AcmeBlogBundle:Admin:index }

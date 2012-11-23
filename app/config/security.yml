@@ -1,0 +1,24 @@
+security:
+    encoders:
+        Acme\BlogBundle\Entity\User:
+            algorithm: sha512
+            encode-as-base64: true
+            iterations: 10
+
+    providers:
+        main:
+            entity: { class: Acme\BlogBundle\Entity\User, property: username }
+
+    firewalls:
+        main:
+            pattern: /.*
+            form_login:
+                check_path: /login_check
+                login_path: /login
+            logout: true
+            security: true
+            anonymous: true
+
+    access_control:
+        - { path: /admin/.*, role: ROLE_ADMIN }
+        - { path: /.*, role: IS_AUTHENTICATED_ANONYMOUSLY }

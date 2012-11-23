@@ -1,0 +1,10 @@
+    {% extends '::base.html.twig' %}
+    {% block title %}
+          symfony2 Учебник | Админка | Главная
+    {% endblock %}
+ 
+    {% block content %}
+       <h2>
+          Добро пожаловать на администраторскую страницу, {{ app.user.username }}!
+        </h2>
+    {% endblock %}

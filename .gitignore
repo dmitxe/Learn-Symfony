@@ -1,0 +1,8 @@
+/vendor/
+/web/bundles/
+app/config/parameters.ini
+app/var/cache/*
+app/var/logs/*
+app/var/mailspool/*
+!*.gitkeep
+!*.gitignore

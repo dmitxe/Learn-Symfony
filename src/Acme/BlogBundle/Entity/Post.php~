@@ -1,0 +1,38 @@
+<?php
+namespace Acme\BlogBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+* @ORM\Entity
+* @ORM\Table(name="post")
+*/
+class Post {
+
+/**
+* @ORM\Id
+* @ORM\Column(type="integer")
+* @ORM\GeneratedValue(strategy="AUTO")
+*/
+protected $id;
+
+/**
+* @ORM\Column(type="string", length=255)
+*/
+protected $title;
+
+/**
+* @ORM\Column(type="text")
+*/
+protected $body;
+
+/**
+* @ORM\Column(type="datetime")
+*/
+protected $created_date;
+
+/**
+* @ORM\Column(type="datetime")
+*/
+protected $updated_date;
+}
