@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: 'C:/WebServers/home/smartcore2.mysite/www/SmartCore/app/config/routing_dev.yml'
