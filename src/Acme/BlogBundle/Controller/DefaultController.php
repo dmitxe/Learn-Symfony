@@ -29,10 +29,8 @@ class DefaultController extends Controller
         $post = new Post();
         $post->setTitle('Demo Blog');
         $post->setBody('Hello Symfony 2');
-        $post->setCreatedDate(new \DateTime("now"));
-        $post->setUpdatedDate(new \DateTime('now'));
         
-        $em = $this->getDoctrine()->getEntityManager();
+        $em = $this->getDoctrine()->getManager();
         $em->persist($post);
         $em->flush();
 
@@ -46,7 +44,8 @@ class DefaultController extends Controller
      */
     public function showAction($id)
     {
-        $post = $this->getDoctrine()->getRepository('AcmeBlogBundle:Post')->find($id);
+        $em = $this->getDoctrine()->getManager();
+        $post = $em->getRepository('AcmeBlogBundle:Post')->find($id);
 
         if (!$post) {
             throw $this->createNotFoundException('Страница не найдена!');
