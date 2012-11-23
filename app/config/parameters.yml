@@ -2,9 +2,9 @@ parameters:
     database_driver:   pdo_mysql
     database_host:     localhost
     database_port:     ~
-    database_name:     smartcore2
+    database_name:     learn_symfony
     database_user:     root
-    database_password: root
+    database_password: 123
 
     mailer_transport:  smtp
     mailer_host:       localhost
