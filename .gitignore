@@ -1,8 +1,9 @@
 /vendor/
+/nbproject/
 /web/bundles/
 app/config/parameters.ini
-app/var/cache/*
-app/var/logs/*
-app/var/mailspool/*
+app/cache/*
+app/logs/*
+app/mailspool/*
 !*.gitkeep
 !*.gitignore
