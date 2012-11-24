@@ -42,6 +42,12 @@ class Post {
     */
     protected $updated_date;
 
+    public function __construct()
+    {
+        $this->created_date = new \DateTime('now');
+        $this->updated_date = new \DateTime('now');
+    }
+
     /**
      * Get id
      *

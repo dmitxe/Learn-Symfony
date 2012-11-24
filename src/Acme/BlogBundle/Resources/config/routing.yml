@@ -3,19 +3,29 @@ acme_blog_default_index:
     pattern: /hello/{name}
     defaults:
         _controller: AcmeBlogBundle:Default:index
+
 acme_blog_default_create:
     pattern: /create/
     defaults:
         _controller: AcmeBlogBundle:Default:create
+
 acme_blog_default_show:
     pattern: /show/{id}
     defaults:
         _controller: AcmeBlogBundle:Default:show
         requirements: 
+<<<<<<< HEAD
           id: \d+          
 #_security_login:
 #    pattern:  /login
 #    defaults: { _controller: AcmeBlogBundle:Security:login }
+=======
+          id: \d+
+                    
+_security_login:
+    pattern:  /login
+    defaults: { _controller: AcmeBlogBundle:Security:login }
+>>>>>>> 032bbb319ee52f30a295ac814d996b1ea426c452
 
 #_security_check:
 #    pattern:  /login_check
