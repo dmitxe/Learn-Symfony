@@ -13,15 +13,15 @@ acme_blog_default_show:
         _controller: AcmeBlogBundle:Default:show
         requirements: 
           id: \d+          
-_security_login:
-    pattern:  /login
-    defaults: { _controller: AcmeBlogBundle:Security:login }
+#_security_login:
+#    pattern:  /login
+#    defaults: { _controller: AcmeBlogBundle:Security:login }
 
-_security_check:
-    pattern:  /login_check
+#_security_check:
+#    pattern:  /login_check
 
-_security_logout:
-    pattern:  /logout
+#_security_logout:
+#    pattern:  /logout
 
 admin_home:
     pattern:  /admin/
