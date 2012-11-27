@@ -20,7 +20,8 @@
         "jms/security-extra-bundle": "1.2.*",
         "jms/di-extra-bundle": "1.1.*",
         "knplabs/knp-menu-bundle":"dev-master",
-        "friendsofsymfony/user-bundle": "*"
+        "friendsofsymfony/user-bundle": "*",
+        "raulfraile/ladybug-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
