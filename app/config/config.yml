@@ -64,7 +64,7 @@ knp_menu:
     templating: false # if true, enables the helper for PHP templates
     default_renderer: twig # The renderer to use, list is also available by default
     
-fos_user:
-    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
-    firewall_name: main
-    user_class: Acme\UserBundle\Entity\User   
+#fos_user:
+#    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+#    firewall_name: main
+#    user_class: Acme\UserBundle\Entity\User   
