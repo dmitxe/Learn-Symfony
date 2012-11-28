@@ -1,5 +1,5 @@
 {
-    "hash": "0be241c338745a3d8eb5f7d59190453d",
+    "hash": "df9f4da9edccc3466b699c15967d3022",
     "packages": [
         {
             "name": "doctrine/common",
@@ -87,7 +87,7 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1353423624",
+            "time": "2012-11-20 15:00:24",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -263,7 +263,6 @@
                 "doctrine/doctrine-bundle": "1.0.*",
                 "symfony/doctrine-bridge": ">=2.1.0,<2.3-dev"
             },
-            "time": "1350914272",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -293,7 +292,8 @@
             "keywords": [
                 "persistence",
                 "Fixture"
-            ]
+            ],
+            "time": "2012-10-22 13:57:52"
         },
         {
             "name": "doctrine/orm",
@@ -398,7 +398,6 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "1353710700",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -433,7 +432,8 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "User management"
-            ]
+            ],
+            "time": "2012-11-23 22:45:00"
         },
         {
             "name": "jms/aop-bundle",
@@ -717,7 +717,6 @@
                 "silex/silex": "for the integration with your silex application",
                 "twig/twig": "for the TwigRenderer and the integration with your templates"
             },
-            "time": "1353000731",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -752,7 +751,8 @@
             "keywords": [
                 "menu",
                 "tree"
-            ]
+            ],
+            "time": "2012-11-15 17:32:11"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -773,7 +773,6 @@
                 "knplabs/knp-menu": "2.0.*",
                 "symfony/framework-bundle": ">=2.0,<2.3-dev"
             },
-            "time": "1351767907",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -806,7 +805,8 @@
             "description": "This bundle provides an integration of the KnpMenu library",
             "keywords": [
                 "menu"
-            ]
+            ],
+            "time": "2012-11-01 11:05:07"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -923,6 +923,101 @@
             "keywords": [
                 "log",
                 "logging"
+            ]
+        },
+        {
+            "name": "raulfraile/ladybug",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raulfraile/Ladybug",
+                "reference": "05d916c7ad4cce1a6679170c1b4b904c45dca23b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/raulfraile/Ladybug/archive/05d916c7ad4cce1a6679170c1b4b904c45dca23b.zip",
+                "reference": "05d916c7ad4cce1a6679170c1b4b904c45dca23b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/serializer": ">=2.0.4",
+                "symfony/yaml": ">=2.0.4"
+            },
+            "time": "2012-11-17 09:12:48",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Ladybug": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raul Fraile",
+                    "email": "raulfraile@gmail.com",
+                    "homepage": "http://www.raulfrailebeneyto.com/"
+                }
+            ],
+            "description": "Simple and Extensible PHP Dumper",
+            "homepage": "https://github.com/raulfraile/Ladybug",
+            "keywords": [
+                "tree",
+                "dump",
+                "ladybug"
+            ]
+        },
+        {
+            "name": "raulfraile/ladybug-bundle",
+            "version": "dev-master",
+            "target-dir": "RaulFraile/Bundle/LadybugBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/raulfraile/LadybugBundle",
+                "reference": "ee96cf45c93dc8cb505a4ad5452cfe137feb924f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/raulfraile/LadybugBundle/archive/ee96cf45c93dc8cb505a4ad5452cfe137feb924f.zip",
+                "reference": "ee96cf45c93dc8cb505a4ad5452cfe137feb924f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.0.0",
+                "raulfraile/ladybug": ">=0.5"
+            },
+            "replace": {
+                "raulfraile/ladybugbundle": "dev-master"
+            },
+            "time": "2012-11-17 09:14:31",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "RaulFraile\\Bundle\\LadybugBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raul Fraile",
+                    "email": "raulfraile@gmail.com",
+                    "homepage": "http://www.raulfrailebeneyto.com/"
+                }
+            ],
+            "description": "Symfony2 bundle for Ladybug library (Simple and Extensible PHP Dumper)",
+            "homepage": "https://github.com/raulfraile/LadybugBundle",
+            "keywords": [
+                "tree",
+                "twig",
+                "dump",
+                "ladybug"
             ]
         },
         {
@@ -1484,6 +1579,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "doctrine/doctrine-fixtures-bundle": 20,
-        "knplabs/knp-menu-bundle": 20
+        "knplabs/knp-menu-bundle": 20,
+        "raulfraile/ladybug-bundle": 20
     }
 }

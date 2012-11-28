@@ -10,7 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="user")
  */
-class User implements UserInterface
+class User implements UserInterface, \Serializable
 {
     /**
      * @ORM\Id
@@ -106,8 +106,8 @@ class User implements UserInterface
             $this->password,
             $this->salt,
             $this->createdAt,
-            $this->post,
-            serialize($this->$userRoles),
+            $this->posts,
+            serialize($this->userRoles),
         ));
     }
 
@@ -125,11 +125,11 @@ class User implements UserInterface
             $this->password,
             $this->salt,
             $this->createdAt,
-            $this->post,
+            $this->posts,
             $userRoles,
-        ) = \unserialize($serialized);
+        ) = unserialize($serialized);
 
-        $this->roles = unserialize($userRoles);
+        $this->userRoles = unserialize($userRoles);
     }
     
     /**

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="role")
  */
-class Role implements RoleInterface
+class Role implements RoleInterface, \Serializable
 {
     /**
      * @ORM\Id
@@ -33,15 +33,15 @@ class Role implements RoleInterface
      */
     protected $createdAt;
     
-        /**
+    /**
      * @see \Serializable::serialize()
      */
     public function serialize()
     {
-        /*
+        /**
          * ! Don't serialize $users field !
          */
-        return \serialize(array(
+        return serialize(array(
             $this->id,
             $this->name,
             $this->createdAt
@@ -57,7 +57,7 @@ class Role implements RoleInterface
             $this->id,
             $this->name,
             $this->createdAt
-        ) = \unserialize($serialized);
+        ) = unserialize($serialized);
     }
  
     /**
