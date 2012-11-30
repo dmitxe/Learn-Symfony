@@ -21,7 +21,8 @@
         "jms/di-extra-bundle": "1.1.*",
         "knplabs/knp-menu-bundle":"dev-master",
         "friendsofsymfony/user-bundle": "*",
-        "raulfraile/ladybug-bundle": "dev-master"
+        "raulfraile/ladybug-bundle": "dev-master",
+        "alb/twig-reflection-bundle": "*"
     },
     "scripts": {
         "post-install-cmd": [

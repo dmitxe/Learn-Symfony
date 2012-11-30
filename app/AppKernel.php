@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new Acme\DemoBundle\AcmeDemoBundle(),
             new Acme\UserBundle\AcmeUserBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new RaulFraile\Bundle\LadybugBundle\RaulFraileLadybugBundle(),
   //          new FOS\UserBundle\FOSUserBundle(),
         );
 
@@ -31,6 +32,7 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            $bundles[] = new Alb\TwigReflectionBundle\AlbTwigReflectionBundle();
         }
 
         return $bundles;
