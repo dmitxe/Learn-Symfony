@@ -3,6 +3,7 @@
 namespace Acme\BlogBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Security\Core\Role\RoleInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -79,7 +80,7 @@ class User implements UserInterface, \Serializable
     protected $posts;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Role")
+     * @ORM\ManyToMany(targetEntity="Role", cascade={"persist"})
      * @ORM\JoinTable(name="user_role",
      *     joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
      *     inverseJoinColumns={@ORM\JoinColumn(name="role_id", referencedColumnName="id")}
@@ -87,17 +88,44 @@ class User implements UserInterface, \Serializable
      *
      * @var ArrayCollection $userRoles
      */
-    protected $userRoles;
+    protected $roles;
+    
+    /**
+     * Constructs a new instance of User
+     */
+    public function __construct()
+    {
+        $this->posts = new ArrayCollection();
+        $this->roles = new ArrayCollection();
+        $this->createdAt = new \DateTime();
+    }
+    
+    /**
+     * Gets the user roles.
+     *
+     * @return array
+     */
+    public function getRoles()
+    {
+        return $this->roles->toArray();
+    }
+    
+    /**
+     * Add the role to user.
+     *
+     * @param RoleInterface $role
+     */
+    public function addRole(RoleInterface $role)
+    {
+        $this->roles->add($role);
+    }
     
     /**
      * @see \Serializable::serialize()
      */
     public function serialize()
     {
-        /*
-         * ! Don't serialize $roles field !
-         */
-        return \serialize(array(
+        return serialize(array(
             $this->id,
             $this->firstName,
             $this->lastName,
@@ -107,7 +135,6 @@ class User implements UserInterface, \Serializable
             $this->salt,
             $this->createdAt,
             $this->posts,
-            serialize($this->userRoles),
         ));
     }
 
@@ -126,10 +153,7 @@ class User implements UserInterface, \Serializable
             $this->salt,
             $this->createdAt,
             $this->posts,
-            $userRoles,
         ) = unserialize($serialized);
-
-        $this->userRoles = unserialize($userRoles);
     }
     
     /**
@@ -157,7 +181,7 @@ class User implements UserInterface, \Serializable
      * 
      * @param string $value The first name
      */
-    public function setFirstName( $value )
+    public function setFirstName($value)
     {
         $this->firstName = $value;
     }
@@ -177,7 +201,7 @@ class User implements UserInterface, \Serializable
      * 
      * @param string $value The last name
      */
-    public function setLastName( $value )
+    public function setLastName($value)
     {
         $this->lastName = $value;
     }
@@ -283,26 +307,6 @@ class User implements UserInterface, \Serializable
     }
 
     /**
-     * Gets the user roles.
-     *
-     * @return ArrayCollection A Doctrine ArrayCollection
-     */
-    public function getUserRoles()
-    {
-        return $this->userRoles;
-    }
-    
-    /**
-     * Constructs a new instance of User
-     */
-    public function __construct()
-    {
-        $this->posts = new ArrayCollection();
-        $this->userRoles = new ArrayCollection();
-        $this->createdAt = new \DateTime();
-    }
-    
-    /**
      * Gets the full name of the user.
      * 
      * @return string The full name
@@ -321,22 +325,12 @@ class User implements UserInterface, \Serializable
     }
 
     /**
-     * Gets an array of roles.
-     * 
-     * @return array An array of Role objects
-     */
-    public function getRoles()
-    {
-        return $this->getUserRoles()->toArray();
-    }
-
-    /**
      * Compares this user to another to determine if they are the same.
      * 
      * @param UserInterface $user The user
      * @return boolean True if equal, false othwerwise.
      */
-    public function  isEqualTo(UserInterface $user)
+    public function isEqualTo(UserInterface $user)
     {
         return md5($this->getUsername()) == md5($user->getUsername());
     }
