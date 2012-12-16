@@ -24,7 +24,7 @@ class AppKernel extends Kernel
             new Acme\DemoBundle\AcmeDemoBundle(),
             new Acme\UserBundle\AcmeUserBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
-  //          new FOS\UserBundle\FOSUserBundle(),
+  //          new FOS\UserBundle\FOSUserBundle(), 
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
