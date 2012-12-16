@@ -1,14 +1,19 @@
     {% extends '::base.html.twig' %}
-    {% block body %}
-                   {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+ 
+
+   {% block body %}
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                         <p>
                             <a href="{{ path('_security_logout') }}">
                                 Выход
                             </a>
-                        </p>
+                         </p>
+            {% endif %}             
+                            
         <p>{{ knp_menu_render('AcmeBlogBundle:Builder:mainMenu') }}</p>
         <h1>{{ post.getTitle() }}</h1>
         <p>{{post.getBody()}}</p>
         <hr/>
         <small>Запись создана {{ post.getCreatedDate().format("Y-m-d H:i:s")}} </small>
+#}
     {% endblock %}

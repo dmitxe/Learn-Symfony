@@ -40,6 +40,27 @@ class FixtureLoader implements FixtureInterface
         $user->addRole($role2);
 
         $manager->persist($user);
+      //  $manager->flush();
+        
+        $user1 = new User();
+        $user1->setFirstName('aaaa');
+        $user1->setLastName('zzz');
+        $user1->setEmail('aaaa@mail.ru');
+        $user1->setUsername('test');
+        $user1->setSalt(md5(microtime()));
+
+        // Шифрует и устанавливает пароль для пользователя,
+        // эти настройки совпадают с конфигурационными файлами
+        $encoder = new MessageDigestPasswordEncoder('sha512', true, 10);
+        $password = $encoder->encodePassword('567', $user1->getSalt());
+        $user1->setPassword($password);
+
+        // Создание ролей
+        
+        $user1->addRole($role2);
+
+        $manager->persist($user1);
         $manager->flush();
+
     }
 }

@@ -1,3 +1,7 @@
+start_page:
+    resource: "@AcmeBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
 acme_acme_blog:
 #    resource: "@AcmeBlogBundle/Controller/"
 #    type:     annotation

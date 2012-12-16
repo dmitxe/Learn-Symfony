@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/config/config.yml</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/config/routing.yml</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/config/parameters.yml</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/AppKernel.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/AcmeBlogBundle.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/DemoBundle/AcmeDemoBundle.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Resources/config/services.xml</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/DependencyInjection/Configuration.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Tests/Controller/DefaultControllerTest.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Menu/Builder.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/Resources/views/base.html.twig</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/web/css/main.css</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Resources/views/Default/index.html.twig</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Resources/config/routing.yml</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/DemoBundle/Resources/config/routing.yml</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Entity/Role.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/DataFixtures/ORM/FixtureLoader.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Entity/User.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/config/security.yml.old</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Entity/Post.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/composer.json</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Controller/AdminController.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Controller/SecurityController.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Controller/DefaultController.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Resources/views/Security/login.html.twig</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/src/Acme/BlogBundle/Resources/views/Default/show.html.twig</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Role/Role.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Role/RoleHierarchy.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/autoload.php</file>
+        <file>file:/Z:/home/smartcore2.mysite/www/SmartCore/app/config/security.yml</file>
+    </open-files>
 </project-private>

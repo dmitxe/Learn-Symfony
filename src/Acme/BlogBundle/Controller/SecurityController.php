@@ -14,7 +14,7 @@ class SecurityController extends Controller
         } else {
             $error = $this->get('request')->getSession()->get(SecurityContext::AUTHENTICATION_ERROR);
         }
- echo 'sdsddsdsdd';
+ //echo 'sdsddsdsdd';
         return $this->render('AcmeBlogBundle:Security:login.html.twig', array(
             'last_username' => $this->get('request')->getSession()->get(SecurityContext::LAST_USERNAME),
             'error' => $error

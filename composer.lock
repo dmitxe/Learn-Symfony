@@ -87,7 +87,7 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-11-20 15:00:24",
+            "time": "1353423624",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -263,6 +263,7 @@
                 "doctrine/doctrine-bundle": "1.0.*",
                 "symfony/doctrine-bridge": ">=2.1.0,<2.3-dev"
             },
+            "time": "1350914272",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -292,8 +293,7 @@
             "keywords": [
                 "persistence",
                 "Fixture"
-            ],
-            "time": "2012-10-22 13:57:52"
+            ]
         },
         {
             "name": "doctrine/orm",
@@ -398,6 +398,7 @@
                 "doctrine/doctrine-bundle": "*",
                 "doctrine/mongodb-odm-bundle": "*"
             },
+            "time": "1353710700",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -432,8 +433,7 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "User management"
-            ],
-            "time": "2012-11-23 22:45:00"
+            ]
         },
         {
             "name": "jms/aop-bundle",
@@ -717,6 +717,7 @@
                 "silex/silex": "for the integration with your silex application",
                 "twig/twig": "for the TwigRenderer and the integration with your templates"
             },
+            "time": "1353000731",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -751,8 +752,7 @@
             "keywords": [
                 "menu",
                 "tree"
-            ],
-            "time": "2012-11-15 17:32:11"
+            ]
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -773,6 +773,7 @@
                 "knplabs/knp-menu": "2.0.*",
                 "symfony/framework-bundle": ">=2.0,<2.3-dev"
             },
+            "time": "1351767907",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -805,8 +806,7 @@
             "description": "This bundle provides an integration of the KnpMenu library",
             "keywords": [
                 "menu"
-            ],
-            "time": "2012-11-01 11:05:07"
+            ]
         },
         {
             "name": "kriswallsmith/assetic",
@@ -944,7 +944,7 @@
                 "symfony/serializer": ">=2.0.4",
                 "symfony/yaml": ">=2.0.4"
             },
-            "time": "2012-11-17 09:12:48",
+            "time": "1353143568",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -993,7 +993,7 @@
             "replace": {
                 "raulfraile/ladybugbundle": "dev-master"
             },
-            "time": "2012-11-17 09:14:31",
+            "time": "1353143671",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
